@@ -1,0 +1,27 @@
+.main{
+    border: 5px solid black;
+    height: 700px;
+    width: 700px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    font-weight: bold;
+    padding: 10px;
+    color: aliceblue;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: greenyellow;
+}
+.box3{
+    background-color: dodgerblue;
+}
+.box4{
+    background-color: black;
+}
+.box5{
+    background-color: cyan;
+}

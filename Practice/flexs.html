@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            padding: 10px;
+            border: 100px solid greenyellow;
+            text-align: center;
+        }
+        .box{
+            border: 2px solid red;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+            border-radius: 20px;
+        }
+
+                /* Color For Odd Box */
+                .box:nth-of-type(odd){
+            background-color: dodgerblue;
+        }
+        /* Flex Box */
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        /* Flex Wrap */
+        .container{
+            width:100%;
+            flex-wrap: wrap;
+
+        }
+        /* Justify Content */
+        .container{
+            justify-content: space-between;
+        }
+
+        /* Align-Content */
+        .container{
+            align-content: space-between;
+        }
+
+
+        /* Order */
+
+        .box:nth-child(1){
+            order: 3;
+        }
+        .box:nth-child(2){
+            order: 4;
+        }
+        .box:nth-child(3){
+            order: 1;
+        }
+        .box:nth-child(4){
+            order: 2;
+        }
+        .box:nth-child(5){
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Flex Box</h2>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>
