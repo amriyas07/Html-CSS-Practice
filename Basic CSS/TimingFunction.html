@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Function</title>
+    <style>
+        .box1,.box2,.box3,.box4,.box5{
+            height: 75px;
+            width: 75px;
+            background-color: dodgerblue;
+        }
+        .box1{
+            animation: animnate 5s linear infinite;
+        }
+        .box2{
+            animation: animnate 5s ease infinite;
+        }
+        .box3{
+            animation: animnate 5s ease-in infinite;
+        }
+        .box4{
+            animation: animnate 5s ease-out infinite;
+        }
+        .box5{
+            animation: animnate 5s ease-in-out infinite;
+        }
+        @keyframes animnate {
+            0%{
+                width: 75px;
+            }
+            50%{
+                width: 100px;
+            }
+            100%{
+                width: 50%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="box1">Linear</div><br/>
+   <div class="box2">Ease</div><br/>
+   <div class="box3">Ease-in</div><br/>
+   <div class="box4">Ease-out</div><br/>
+   <div class="box4">Ease-in-out</div><br/>  
+</body>
+</html>

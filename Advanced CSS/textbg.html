@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Background</title>
+    <style>
+    .container{
+        top:50%;
+        left:50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+    .text{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 65px;
+        font-weight: bolder;
+        background-image: url("C:\\Users\\riyas\\Downloads\\pexels-maxime-francis-2246476.jpg");
+        background-size: cover;
+        color: rgba(0, 0, 0, .2);
+        background-clip: text;
+        animation: anime 20s linear infinite;
+    }
+    @keyframes anime{
+        0%{
+            background-position: 0 0;
+            transform: scale(0);
+        }
+        50%{
+            background-position: 0 75px;
+            transform: scale(5);
+        }
+        100%{
+            background-position: 0 150px;
+            transform: scale(10);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Varisu</h1>
+        </div>
+    </div>
+</body>
+</html>

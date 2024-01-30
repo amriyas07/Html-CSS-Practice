@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Loader</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        .container{
+            top:50%;
+            left:50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+        .dot{
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            border-radius: 50%;
+            animation: flips 1s linear infinite;
+        }
+        @keyframes flips{
+            0%{
+                background-color: white;
+            }
+            50%{
+                background-color: green;
+            }
+            100%{
+                background-color: orangered;
+            }
+        }
+        .circle1{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: transparent;
+            top: -10px;
+            left: -10px;
+            border-radius: 50%;
+            border: 10px solid;
+            border-color: transparent;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-left-color: red;
+            border-right-color: blue;
+            animation: clock-rotates 5s linear infinite;
+        }
+        @keyframes clock-rotates {
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .circle2{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: transparent;
+            top: -35px;
+            left: -35px;
+            border-radius: 50%;
+            border: 10px solid;
+            border-color: transparent;
+            border-top-color: greenyellow;
+            border-bottom-color: aqua;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            animation: Anti-rotates 5s linear infinite;
+        }
+        @keyframes Anti-rotates {
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(-180deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="dot"></div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+   </div> 
+</body>
+</html>

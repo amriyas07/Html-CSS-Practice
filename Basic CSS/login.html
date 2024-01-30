@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url("C:\\Users\\riyas\\Downloads\\pexels-maxime-francis-2246476.jpg");
+            padding: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-size: larger;
+
+        }
+        h1{
+            text-align: center;
+        }
+
+        .container{
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+        .cards{
+            padding: 55px 55px 50px 55px;
+            background: rgba(247, 247, 246, 0.8);
+            border-radius: 8px;
+        }
+        #username, #password{
+            border: none;
+            width: 200px;
+            height: 15px;
+            background: transparent;
+            border-bottom: 2px solid whitesmoke;
+            padding: 6px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            display: block;
+            color: black;
+            font-size: large;
+        }
+        #buttons{
+            border: 20px;
+            border-radius: 10px;
+            background-color: green;
+            padding: 10px 20px;
+            color: black;
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            margin-left: 65px;
+            font-size: medium;
+        }
+        #buttons:hover{
+            color: black; 
+            background-color: aqua;
+            cursor: pointer;
+        }
+        a{
+            font-size: small;
+        }
+        a:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="container">
+            <div class="cards">
+                <form action="/submit_form" method="post">
+                <h1>Login Form</h1>
+                <hr/>
+                <label for="username">User Name: <input type="text" id="username" name="username" placeholder=" Enter User Name" required/></label><br/>
+                <label for="password">Password: <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter Password" required/></label><br/>
+                <a href="#">forgot password</a><br/>
+                <input type="submit" value="Submit" id="buttons"/>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

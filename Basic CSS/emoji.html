@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji</title>
+    <style>
+        .container{
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+        .emojiface{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border-radius: 50%;
+            border: 2px solid black;
+            animation: expression 1s linear infinite;
+        }
+        @keyframes expression{
+            0%{
+
+            }
+            50%{
+                background-color: red;
+            }
+            100%{
+                background-color: greenyellow;
+            }
+        }
+        .eyeright,.eyeleft{
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            border: 0.5px solid black;
+
+        }
+        .eyeleft{
+            margin-top: 55px;
+            margin-left: 35px;
+        }
+        .eyeright{
+            margin-top: 55px;
+            margin-left: 125px;
+        }
+        .eyeball-right,.eyeball-left{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: black;
+            animation: ballmove 2s ease-out infinite;
+        }
+        
+        @keyframes ballmove{
+                0%{
+                    
+                }
+                50%{
+                    margin-top:14px;
+                }
+                100%{
+                
+                }
+            }
+        
+        .eyeball-left{
+            margin-top: 12px;
+            margin-left: 10px;
+        }
+        .eyeball-right{
+            margin-top: 12px;
+            margin-left: 10px;
+        }
+        .mouth{
+            height: 2px;
+            width: 40px;
+            background-color: black;
+            border: 2px solid transparent;
+            margin-top: 140px;
+            margin-left: 78px;
+            border-bottom-left-radius: 90px;
+            border-bottom-right-radius: 90px;
+            overflow: hidden;
+            animation: mouth 2s ease-out infinite;
+        }
+        @keyframes mouth{
+            0%{
+                
+            }
+            50%{
+                height: 4px;
+                border-radius: 50%;
+            }
+            100%{
+               
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="emojiface">
+        <div class="eyeright">
+            <div class="eyeball-right"></div>
+        </div>
+        <div class="eyeleft">
+            <div class="eyeball-left"></div>
+        </div>
+        <div class="mouth">
+        </div>
+    </div>
+    </div>
+</body>
+</html>

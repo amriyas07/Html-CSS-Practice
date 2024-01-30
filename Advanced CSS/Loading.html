@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Bar</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .container{
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+        .loadingbar{
+            height: 20px;
+            width: 400px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .loading{
+            height: 15px;
+            width: 395.75px;
+            background-color: dodgerblue;
+            border-radius: 10px;
+            margin-top: 2.5px;
+            margin-left: 2.5px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loadingbar">
+            <div class="loading">
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
