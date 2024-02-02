@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="navigation">
+        <a href="#" class="Nav-Title">MOHAMED RIYASDEEN</a>
+        <button class="nav-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-item hide">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".nav-btn").onclick=function(){
+            document.querySelector(".nav-item").classList.toggle("hide");
+
+        }
+    </script>
+</body>
+</html>
